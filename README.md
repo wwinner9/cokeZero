@@ -6,11 +6,13 @@
   Projecto baseado no design Web de <strong>Wilmy Danguya</strong>
 </h4>
 
-![O Resultado do Projecto](../../assets/cokeZz.png)
+![O Resultado do Projecto](/src/assets/cokeZz.png)
 
 ## 📚 Iniciando o Projecto
 
   **Yarn Start** - Para iniciar o Projecto
+  **Npm start** - Para iniciar o Projecto
+
 
 ---
 
