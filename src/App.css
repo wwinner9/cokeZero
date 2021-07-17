@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: rgba(0, 0, 0, 0.932);
+    margin: 0 0px 0 150px;
+    position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.menuTool{
+    background-color: rgba(0, 0, 0, 0.932);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    display: none;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.menuTool #btnClose{
+    font-size: 30px; 
+    color: #d9d9d9;
+    text-decoration: none;
+    margin-left: 400px;
+    
 }
 
-.App-link {
-  color: #61dafb;
+.menuTool ul{
+    margin: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menuTool ul li{
+    font-size: 30px;
+    text-align: center;
+    list-style: none;
+ 
+}
+
+.menuTool ul li a {
+    color: #d9d9d9;
+    text-decoration: none;
+    line-height: 60px;
+    transition: border 1s;
+    text-indent: 10px;
+}
+
+.menuTool ul li a:hover{
+    border:1px solid #1e98dc;
+}
+
+
+
+section{
+    display: grid;
+    max-width: 100%; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0;
+    
+}
+section .leftSide{
+    margin-top: 100px; 
+}
+
+section .leftSide article >p{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    line-height: 26px;
+    color: #d9d9d9;
+    
+}
+
+section .leftSide article :first-child{
+    color: #1e98dc;
+    margin-bottom: 10px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+section .leftSide article h2{
+    font-size: 5.0625rem;
+    font-weight: 700;
+    color: #d9d9d9;
+    line-height: 91px;
+    margin-bottom: 30px;
+}
+
+section button{
+    width: 250px;
+    height: 70px;
+    background-color: #1e98dc;
+    box-shadow: 0px 10px 26px rgba(30, 152, 220, 0.11);
+    border-radius: 4px;
+    border: none;
+    margin-top: 50px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    transition: background .5s;
+}
+
+section button:hover{
+    background-color: #1e9adc67;
+}
+
+section .rightSide{
+    position: relative;
+    margin-top: 30px;
+}
+
+section .rightSide #imgCoke{
+    width: 750px;
+    height: 600px;
+    z-index: 1 !important;
+    position:relative;
+}
+
+
+section .rightSide h1{
+    position: absolute;
+    left: 240px;
+    top: 50px;
+    font-size: 150px;
+    font-weight: 900;
+    color: #1e98dc;
+    text-shadow: 0px 10px 26px rgba(30, 152, 220, 0.11);
+    line-height: 130px;
+}
+
+@media screen and (max-width:1260px){    
+    body{ margin: 0 10px 0 40px;}
+}
+
+@media screen and (max-width:1000px){
+
+    section{grid-template-columns: 1fr;}
+
+    section .rightSide #imgCoke{ 
+        width: 600px; 
+        height: 500px;
+    }
+
+    section .rightSide h1{
+        left: 180px;
+        top: 40px;
+        font-size: 150px;
+        font-weight: 900;
+        color: #1e98dc;
+        text-shadow: 0px 10px 26px rgba(30, 152, 220, 0.11);
+        line-height: 105px;
+    }
+    section .rightSide{margin-top:50px ;}
+}
+
+/*==== Smaller device ====*/
+@media screen and (max-width:650px){
+
+    section .leftSide article h2{
+        font-size: 4.0rem;
+        line-height: 61px;
+    }
+
 }

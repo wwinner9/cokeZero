@@ -1,3 +1,45 @@
+<h1 align="center">
+  📰<br>Projecto Coke-Zero
+</h1>
+
+<h4 align="center">
+  Projecto baseado no design Web de <strong>Wilmy Danguya</strong>
+</h4>
+
+![O Resultado do Projecto](../../assets/cokeZz.png)
+
+## 📚 Iniciando o Projecto
+
+  **Yarn Start** - Para iniciar o Projecto
+
+---
+
+## 💼 Tecnologias utilizadas
+Para o desenvolvimento deste site utilizei as seguintes tecnologias:
+
+- HTML(Jsx); 
+- JavaScript;
+- React
+- ScrollReveal;
+-
+
+---
+
+## 🦄 Autor<br>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/wwinner9">
+        <img src="https://avatars.githubusercontent.com/u/75936750?s=400&u=aa3450ad59e5c239fd6ab632151d4df4ac3c7d2c&v=4" width="100px;" alt="Avatar Wwinner"/><br>
+        <sub>
+          <b>Fernando Wwinner</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table> 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
